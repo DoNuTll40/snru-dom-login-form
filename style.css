@@ -87,7 +87,7 @@ h1 {
     background-color: deeppink;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 900px) {
     .login-form {
         max-width: 90%;
     }
