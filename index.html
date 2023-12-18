@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework | FORM</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <h1>Homework | FORM</h1>
+    <hr>
+    <form class="login-form">
+        <label class="label" for="username">Username</label>
+        <input type="text" id="username">
+        <label id="userlabel"></label>
+        <label class="label" for="password">Password</label>
+        <input type="text" id="password">
+        <label id="passlabel"></label>
+        <select name="role" id="role">
+            <option selected disabled>Select Role</option>
+            <option value="Buyer">Buyer</option>
+            <option value="Seller">Seller</option>
+            <option value="Visitor">Visitor</option>
+        </select>
+        <label id="selectlabel"></label>
+        <input type="submit" value="Login">
+    </form>
+    <script src="./main.js"></script>
+</body>
+</html>

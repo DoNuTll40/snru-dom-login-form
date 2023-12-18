@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+    font-family: 'itim';
+}
+
+body {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.login-form {
+    max-width: 50%;
+    background: lightpink;
+    margin: auto;
+    position: relative;
+    top: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.login-form > input{
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.login-form input[type=text] {
+    padding-left: 10px;
+}
+
+.login-form input[type=text]:focus, select:focus {
+    outline: 2px solid deeppink;
+}
+
+.login-form .label {
+    padding-left: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.1);
+    background-color: lightcoral;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.login-form select {
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    padding-left: 10px;
+    box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.login-form input[type=submit] {
+    margin-top: 30px;
+}
+
+.login-form input[type=submit]:hover {
+    transition: 0.5s ease;
+    color: white;
+    cursor: pointer;
+    outline: 3px solid white;
+    background-color: deeppink;
+}
