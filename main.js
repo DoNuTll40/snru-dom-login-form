@@ -46,6 +46,8 @@ const checkUser = (inputObj) => {
 
 const checkPass = (inputObj) => {
   const password = inputObj['password'];
+  const hasNumber = /\d/.test(password);
+  const hasLetter = /[a-zA-Z]/.test(password);
   if (password === '') {
     colorpassLabel();
     passlabel.textContent = `กรุณาป้อนรหัสผ่าน!`;
@@ -55,7 +57,10 @@ const checkPass = (inputObj) => {
   } else if (password.length <= 4) {
     colorpassLabel();
     passlabel.textContent = `รหัสต้องมีมากกว่า 4 ตัวอักษร!`;
-  } else {
+  } else if (!(hasNumber && hasLetter)) {
+    colorpassLabel();
+    passlabel.textContent = `รหัสผ่านต้องมีทั้งตัวเลขและตัวอักษร!`;
+  }else {
     checkRole(inputObj);
     passlabel.textContent = ``;
     inp_password.style.border = 'none';
